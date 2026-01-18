@@ -1,0 +1,353 @@
+/* =========================
+   RESET
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =========================
+   BODY
+========================= */
+body {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  background-color: #000;
+  color: #f4b400;
+  line-height: 1.6;
+}
+
+/* =========================
+   HEADER / NAVBAR
+========================= */
+header {
+  background-color: #000;
+  border-bottom: 3px solid #f4b400;
+}
+
+.navbar {
+  max-width: 1200px;
+  margin: auto;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* =========================
+   LOGO
+========================= */
+.logo {
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #f4b400;
+  padding: 6px;
+  background-color: #000;
+  transition: transform 0.3s;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+/* =========================
+   TÍTULO
+========================= */
+header h1 {
+  color: #f4b400;
+  font-size: 34px;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+/* =========================
+   MENU LINKS
+========================= */
+#nav-links {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+#nav-links a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #eaeaea;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+#nav-links a:hover {
+  color: #f4b400;
+}
+
+/* =========================
+   BOTÃO CONTATO
+========================= */
+.btn-default {
+  background-color: #f4b400;
+  color: #000;
+  padding: 10px 26px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-default:hover {
+  background-color: #ffd84d;
+}
+
+/* =========================
+   HOME / HERO
+========================= */
+.menu-section#home {
+  background-color: #1a1a1a;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.home-content h1 {
+  color: #f4b400;
+  font-size: 48px;
+  font-weight: 900;
+  margin-bottom: 15px;
+}
+
+.home-content p {
+  font-size: 20px;
+  color: #eaeaea;
+  margin-bottom: 30px;
+}
+
+/* =========================
+   BOTÃO PRINCIPAL
+========================= */
+.btn-primary {
+  background-color: #f4b400;
+  color: #000;
+  padding: 16px 40px;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #ffd84d;
+}
+
+/* =========================
+   SEÇÕES
+========================= */
+.menu-section {
+  max-width: 1200px;
+  margin: auto;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.menu-section h2 {
+  color: #f4b400;
+  font-size: 40px;
+  margin-bottom: 40px;
+  border-bottom: 3px solid #f4b400;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.menu-section h3 {
+  color: #f4b400;
+  margin: 40px 0 20px;
+}
+
+/* =========================
+   CARDS
+========================= */
+.menu-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background-color: #1a1a1a;
+  border: 2px solid #f4b400;
+  border-radius: 16px;
+  padding: 25px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(244, 180, 0, 0.3);
+}
+
+/* =========================
+   IMAGEM CARD
+========================= */
+.card img {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+/* =========================
+   TEXTO CARD
+========================= */
+.card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #eaeaea;
+  margin-bottom: 10px;
+}
+
+/* =========================
+   PREÇO
+========================= */
+.price {
+  display: block;
+  font-size: 22px;
+  font-weight: bold;
+  color: #f4b400;
+  margin-bottom: 15px;
+}
+
+/* =========================
+   BOTÃO CARD
+========================= */
+.card button {
+  background-color: #f4b400;
+  color: #000;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card button:hover {
+  background-color: #ffd84d;
+}
+
+/* =========================
+   SOBRE NÓS
+========================= */
+.sobre-nos {
+  background-color: #1a1a1a;
+  padding: 100px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.sobre-container {
+  max-width: 800px;
+  text-align: center;
+}
+
+.sobre-nos h2 {
+  font-size: 42px;
+  font-weight: 900;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.sobre-nos h2::after {
+  content: "";
+  width: 80px;
+  height: 4px;
+  background-color: #f4b400;
+  display: block;
+  margin: 15px auto 0;
+  border-radius: 2px;
+}
+
+.sobre-nos p {
+  color: #eaeaea;
+  font-size: 18px;
+  line-height: 1.9;
+  margin-bottom: 25px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+  background-color: #000;
+  border-top: 3px solid #f4b400;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  color: #eaeaea;
+}
+
+/* =========================
+   RESPONSIVO
+========================= */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  header h1 {
+    font-size: 26px;
+  }
+
+  .home-content h1 {
+    font-size: 36px;
+  }
+
+  .home-content p {
+    font-size: 18px;
+  }
+}
+header.fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: #000;
+}
+/* =========================
+   MODAL CARRINHO
+========================= */
+.cart-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.cart-modal.active {
+  display: flex;
+}
+
+.cart-content {
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 400px;
+  color: #fff;
+}
+.cart-content h2 {
+  margin-bottom: 20px;
+  color: #f4b400;
+}
